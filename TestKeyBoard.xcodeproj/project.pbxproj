@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BF69EF31FF51890D1FAAA69 /* Pods_TestKeyBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE40A8530BE622E6F1E0B6B /* Pods_TestKeyBoard.framework */; };
 		235B9A0E1D875A2C0016FAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B9A0D1D875A2C0016FAD0 /* AppDelegate.swift */; };
 		235B9A101D875A2C0016FAD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B9A0F1D875A2C0016FAD0 /* ViewController.swift */; };
 		235B9A131D875A2C0016FAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235B9A111D875A2C0016FAD0 /* Main.storyboard */; };
@@ -48,7 +49,10 @@
 		235B9A291D875A2D0016FAD0 /* TestKeyBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestKeyBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		235B9A2D1D875A2D0016FAD0 /* TestKeyBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestKeyBoardUITests.swift; sourceTree = "<group>"; };
 		235B9A2F1D875A2D0016FAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23F213A71D89E0B800D537B7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		23F213A71D89E0B800D537B7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6F14610F499C46FAE14A4FAC /* Pods-TestKeyBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestKeyBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestKeyBoard/Pods-TestKeyBoard.release.xcconfig"; sourceTree = "<group>"; };
+		D6838CDC4877B453766F52AA /* Pods-TestKeyBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestKeyBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestKeyBoard/Pods-TestKeyBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		DFE40A8530BE622E6F1E0B6B /* Pods_TestKeyBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestKeyBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF69EF31FF51890D1FAAA69 /* Pods_TestKeyBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,11 +84,13 @@
 		235B9A011D875A2C0016FAD0 = {
 			isa = PBXGroup;
 			children = (
-				23F213A61D89E07600D537B7 /* PodFile */,
 				235B9A0C1D875A2C0016FAD0 /* TestKeyBoard */,
 				235B9A211D875A2C0016FAD0 /* TestKeyBoardTests */,
 				235B9A2C1D875A2D0016FAD0 /* TestKeyBoardUITests */,
 				235B9A0B1D875A2C0016FAD0 /* Products */,
+				23F213A61D89E07600D537B7 /* Podfile */,
+				AA0615F12A78C5DCB740B281 /* Pods */,
+				714ED927F1C86708A2C8027E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,12 +135,29 @@
 			path = TestKeyBoardUITests;
 			sourceTree = "<group>";
 		};
-		23F213A61D89E07600D537B7 /* PodFile */ = {
+		23F213A61D89E07600D537B7 /* Podfile */ = {
 			isa = PBXGroup;
 			children = (
 				23F213A71D89E0B800D537B7 /* Podfile */,
 			);
-			name = PodFile;
+			name = Podfile;
+			sourceTree = "<group>";
+		};
+		714ED927F1C86708A2C8027E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFE40A8530BE622E6F1E0B6B /* Pods_TestKeyBoard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA0615F12A78C5DCB740B281 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6838CDC4877B453766F52AA /* Pods-TestKeyBoard.debug.xcconfig */,
+				6F14610F499C46FAE14A4FAC /* Pods-TestKeyBoard.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 235B9A321D875A2D0016FAD0 /* Build configuration list for PBXNativeTarget "TestKeyBoard" */;
 			buildPhases = (
+				70BC10C5000245B8E692FEA6 /* [CP] Check Pods Manifest.lock */,
 				235B9A061D875A2C0016FAD0 /* Sources */,
 				235B9A071D875A2C0016FAD0 /* Frameworks */,
 				235B9A081D875A2C0016FAD0 /* Resources */,
+				066895744B9A254BC4B3AE1C /* [CP] Embed Pods Frameworks */,
+				8113F34EA0DF678BE5B8C818 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +289,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		066895744B9A254BC4B3AE1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestKeyBoard/Pods-TestKeyBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70BC10C5000245B8E692FEA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8113F34EA0DF678BE5B8C818 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestKeyBoard/Pods-TestKeyBoard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		235B9A061D875A2C0016FAD0 /* Sources */ = {
@@ -409,6 +484,7 @@
 		};
 		235B9A331D875A2D0016FAD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6838CDC4877B453766F52AA /* Pods-TestKeyBoard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestKeyBoard/Info.plist;
@@ -420,6 +496,7 @@
 		};
 		235B9A341D875A2D0016FAD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F14610F499C46FAE14A4FAC /* Pods-TestKeyBoard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestKeyBoard/Info.plist;

@@ -1,0 +1,12 @@
+PODS:
+  - apptentive-ios (3.2.1)
+
+DEPENDENCIES:
+  - apptentive-ios
+
+SPEC CHECKSUMS:
+  apptentive-ios: bb0b126f7d2a3bc87fac843da3a71df7f50d433e
+
+PODFILE CHECKSUM: cdf1d229ce7b111167d68484b1ce7893aedbab4e
+
+COCOAPODS: 1.0.1
