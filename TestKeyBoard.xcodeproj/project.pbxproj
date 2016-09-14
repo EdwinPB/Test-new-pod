@@ -14,6 +14,7 @@
 		235B9A181D875A2C0016FAD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235B9A161D875A2C0016FAD0 /* LaunchScreen.storyboard */; };
 		235B9A231D875A2D0016FAD0 /* TestKeyBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B9A221D875A2D0016FAD0 /* TestKeyBoardTests.swift */; };
 		235B9A2E1D875A2D0016FAD0 /* TestKeyBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B9A2D1D875A2D0016FAD0 /* TestKeyBoardUITests.swift */; };
+		23F213A81D89E0B800D537B7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 23F213A71D89E0B800D537B7 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		235B9A291D875A2D0016FAD0 /* TestKeyBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestKeyBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		235B9A2D1D875A2D0016FAD0 /* TestKeyBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestKeyBoardUITests.swift; sourceTree = "<group>"; };
 		235B9A2F1D875A2D0016FAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23F213A71D89E0B800D537B7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		235B9A011D875A2C0016FAD0 = {
 			isa = PBXGroup;
 			children = (
+				23F213A61D89E07600D537B7 /* PodFile */,
 				235B9A0C1D875A2C0016FAD0 /* TestKeyBoard */,
 				235B9A211D875A2C0016FAD0 /* TestKeyBoardTests */,
 				235B9A2C1D875A2D0016FAD0 /* TestKeyBoardUITests */,
@@ -123,6 +126,14 @@
 				235B9A2F1D875A2D0016FAD0 /* Info.plist */,
 			);
 			path = TestKeyBoardUITests;
+			sourceTree = "<group>";
+		};
+		23F213A61D89E07600D537B7 /* PodFile */ = {
+			isa = PBXGroup;
+			children = (
+				23F213A71D89E0B800D537B7 /* Podfile */,
+			);
+			name = PodFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 			files = (
 				235B9A181D875A2C0016FAD0 /* LaunchScreen.storyboard in Resources */,
 				235B9A151D875A2C0016FAD0 /* Assets.xcassets in Resources */,
+				23F213A81D89E0B800D537B7 /* Podfile in Resources */,
 				235B9A131D875A2C0016FAD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +494,7 @@
 				235B9A341D875A2D0016FAD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		235B9A351D875A2D0016FAD0 /* Build configuration list for PBXNativeTarget "TestKeyBoardTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +503,7 @@
 				235B9A371D875A2D0016FAD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		235B9A381D875A2D0016FAD0 /* Build configuration list for PBXNativeTarget "TestKeyBoardUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +512,7 @@
 				235B9A3A1D875A2D0016FAD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
